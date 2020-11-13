@@ -77,9 +77,9 @@ class Student
     SELECT * FROM students
     WHERE grade = ?
     SQL
-  end  
   
-  DB[:conn].execute(sql, grade)
+    DB[:conn].execute(sql, grade)
+  end
   
   def save
     sql = <<-SQL
